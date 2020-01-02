@@ -12,8 +12,8 @@ Users={};
 
   ngOnInit() {
     this.data.getData().subscribe ( d=>{
-         this.Users['arr'] = d;
-         alert(this.Users['arr'].length);
+         this.Users = d['data'];
+        //  alert(this.Users['arr'].length);
     })
   } 
 

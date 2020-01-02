@@ -1,1 +1,10 @@
-<p>pricing works!</p>
+<div class="d-flex flex-wrap">
+    <div class="card" style="width: 18rem;" *ngFor="let user of Users">
+        <img src="{{user['avatar']}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-text">Name : {{user['first_name']}}</h5>
+          <p class="card-text">Email : {{user['email']}}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+</div>
